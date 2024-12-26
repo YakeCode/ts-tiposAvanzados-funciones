@@ -1,4 +1,4 @@
-type Sizes = 'S' | 'M' | 'L' | 'XL'; // LITERAL TYPE
+/*export type Sizes = 'S' | 'M' | 'L' | 'XL'; // LITERAL TYPE
 
 type ProductType = {
   id: number| string;
@@ -7,7 +7,7 @@ type ProductType = {
   sizes: Sizes;
   }
 
-interface ProductInterface {
+export interface ProductInterface {
   id: number| string;
   name: string;
   price: number;
@@ -22,4 +22,4 @@ const addProduct = (data: ProductInterface) => {
   products.push(data);
 }
 
-
+*/
