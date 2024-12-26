@@ -1,6 +1,6 @@
 // Tipado
+import { BaseModel } from '../base.model'
 
-export interface Category {
-  id: string | number;
+export interface Category extends BaseModel {
   name: string;
 }
