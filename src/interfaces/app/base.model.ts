@@ -1,5 +1,5 @@
 export interface BaseModel {
-  id: number| string;
+  readonly id: string;
   createdAt: Date;
   updatedAt: Date;
 }
