@@ -1,6 +1,6 @@
 // Tipado
-import { BaseModel } from '../base.model'
-import { Category } from "../categories/category.model";
+import { BaseModel } from '../base.model';
+import { Category } from '../categories/category.model';
 
 export type Sizes = 'S' | 'M' | 'L' | 'XL';
 
@@ -9,9 +9,9 @@ export interface Product extends BaseModel {
   image: string;
   description: string;
   stock: number;
-  sizes? :Sizes;
+  sizes?: Sizes;
   color?: string;
-  price: number ;
+  price: number;
   category: Category;
   isNew: boolean;
   tags: string[];
