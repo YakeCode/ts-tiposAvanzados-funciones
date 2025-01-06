@@ -1,7 +1,7 @@
 //manipulación
 
 import { faker } from '@faker-js/faker';
-import { CreateProduct } from './product.dto';
+import { CreateProduct, UpdateProduct } from './product.dto';
 import { Product } from './product.model';
 
 export const products: Product[] = [];
@@ -27,9 +27,10 @@ export const addProduct = (data: CreateProduct): Product => {
   return newProduct;
 };
 
-export const updateProduct = (id: string, changes: Product) => {
+export const updateProduct = (id: string, changes: UpdateProduct): Product => {
   const index = products.findIndex((product) => product.id === id);
   products[index] = { ...products[index], ...changes };
+  return products[index];
 };
 
 export const deleteProduct = (id: string) => {

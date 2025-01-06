@@ -5,4 +5,13 @@ export interface CreateProduct
   categoryId: string; // Se le envía el id de la categoría con el cual esta relacionado el producto
 }
 
-type example = Pick<Product, 'id' | 'createdAt' | 'updatedAt' | 'category'>;
+/// Escoger lo que voy a usar de un tipo en especifico
+export type example = Pick<
+  Product,
+  'id' | 'createdAt' | 'updatedAt' | 'category'
+>;
+
+export interface UpdateProduct extends Partial<CreateProduct> {}
+
+// Required: Hace que todos los campos sean obligatorios
+export type example2 = Required<CreateProduct>;

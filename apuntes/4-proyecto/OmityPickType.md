@@ -55,3 +55,5 @@ type example = {
     category: Category;
 }
 ```
+
+En conclusion, con **Omit y Pick** podemos crear nuevos tipos, sea omitiento con **Omit** O escogiendo con **Pick.**
