@@ -1,6 +1,7 @@
 import { faker } from '@faker-js/faker';
 import {
   addProduct,
+  findProduct,
   products,
   updateProduct,
 } from './products/product.service';
@@ -31,3 +32,7 @@ updateProduct(product1.id, {
 });
 
 console.log(products[0]);
+
+findProduct({
+  title: 'New title',
+});

@@ -1,13 +1,13 @@
 //manipulación
 
 import { faker } from '@faker-js/faker';
-import { CreateProduct, UpdateProduct } from './product.dto';
+import { CreateProduct, FindProduct, UpdateProduct } from './product.dto';
 import { Product } from './product.model';
 
 export const products: Product[] = [];
-
-export const findProduct = (id: string) => {
-  return products.find((product) => product.id === id);
+//necesito que sin importar el dato con el que se busque elproducto se pueda encontrar en la funciom findProduct
+export const findProduct = (product: FindProduct): Product[] => {
+  return products;
 };
 
 export const addProduct = (data: CreateProduct): Product => {

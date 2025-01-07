@@ -15,3 +15,5 @@ export interface UpdateProduct extends Partial<CreateProduct> {}
 
 // Required: Hace que todos los campos sean obligatorios
 export type example2 = Required<CreateProduct>;
+
+export interface FindProduct extends Readonly<Partial<Product>> {}
