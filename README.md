@@ -1,5 +1,11 @@
 # ts-tiposAvanzados-funciones
 
+Curso de Typescript realizado por platzi
+
+<div style="text-align: center;">
+  <img src="image/Certificado%20Ts.jpg" alt="Certificado" width="550" height="400">
+</div>
+
 **Nota :** Si deseo que una variable sea sola de lectura al definirla puedo usar la palabra reservada **readonly**
 
 ```Typescript
