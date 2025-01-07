@@ -40,7 +40,7 @@ export interface CreateProduct extends Omit<Product, "id" | "createdAt" | "updat
 
 ## Pick
 
-Es la misma idea del omit, pero en vez de omitir los campos yo voy a escogerlos y crearuia un tipo nueo a partir de estos tipos anteriores
+Es la misma idea del omit, pero en vez de omitir los campos yo voy a escogerlos y crearía un tipo nuevo a partir de estos tipos anteriores
 
 ```Typescript
 
@@ -56,4 +56,4 @@ type example = {
 }
 ```
 
-En conclusion, con **Omit y Pick** podemos crear nuevos tipos, sea omitiento con **Omit** O escogiendo con **Pick.**
+En conclusion, con **Omit y Pick** podemos crear nuevos tipos, sea omitiendo con **Omit** O escogiendo con **Pick.**

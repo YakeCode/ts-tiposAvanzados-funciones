@@ -5,7 +5,7 @@ import { CreateProduct, FindProduct, UpdateProduct } from './product.dto';
 import { Product } from './product.model';
 
 export const products: Product[] = [];
-//necesito que sin importar el dato con el que se busque elproducto se pueda encontrar en la funciom findProduct
+//necesito que sin importar el dato con el que se busque el producto se pueda encontrar en la función findProduct
 export const findProduct = (product: FindProduct): Product[] => {
   return products;
 };
@@ -27,13 +27,16 @@ export const addProduct = (data: CreateProduct): Product => {
   return newProduct;
 };
 
-export const updateProduct = (id: string, changes: UpdateProduct): Product => {
+export const updateProduct = (
+  id: Product['id'],
+  changes: UpdateProduct
+): Product => {
   const index = products.findIndex((product) => product.id === id);
   products[index] = { ...products[index], ...changes };
   return products[index];
 };
 
-export const deleteProduct = (id: string) => {
+export const deleteProduct = (id: Product['id']) => {
   const index = products.findIndex((product) => product.id === id);
   products.splice(index, 1);
 };
